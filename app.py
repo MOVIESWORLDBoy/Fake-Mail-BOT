@@ -53,7 +53,7 @@ fsub_text = """
 **❗️ ATTENTION**
 
 You see this message because you are not subscribed to the channel:
-@sinimapremi 
+@botsupportmst
 
 It is important that you are up to date with the latest updates and aware of the brand new functionality."""
 
