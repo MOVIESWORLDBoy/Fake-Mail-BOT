@@ -39,11 +39,11 @@ CHANNEL = os.environ['CHANNEL']
 OWNER = int(os.environ['OWNER'])
 
 start_text = """
-Hello {} , Welcome To The Temp| Fake Mail Bot
+<b>Hᴇʟʟᴏ {} , Wᴇʟᴄᴏᴍᴇ Tᴏ Tʜᴇ Tᴇᴍᴘ| Fᴀᴋᴇ Mᴀɪʟ Bᴏᴛ
 
-On this bot you can create a temporary (disposable) email in a second, that self-destructs after some time. Stay safe, avoid spam - take care of your anonymity. You can select from many domains and create own nick. Smart, huh?
+Oɴ ᴛʜɪꜱ ʙᴏᴛ ʏᴏᴜ ᴄᴀɴ ᴄʀᴇᴀᴛᴇ ᴀ ᴛᴇᴍᴘᴏʀᴀʀʏ (ᴅɪꜱᴘᴏꜱᴀʙʟᴇ) ᴇᴍᴀɪʟ ɪɴ ᴀ ꜱᴇᴄᴏɴᴅ, ᴛʜᴀᴛ ꜱᴇʟғ-ᴅᴇꜱᴛʀᴜᴄᴛꜱ ᴀғᴛᴇʀ ꜱᴏᴍᴇ ᴛɪᴍᴇ. Sᴛᴀʏ ꜱᴀғᴇ, ᴀᴠᴏɪᴅ ꜱᴘᴀᴍ - ᴛᴀᴋᴇ ᴄᴀʀᴇ ᴏғ ʏᴏᴜʀ ᴀɴᴏɴʏᴍɪᴛʏ. Yᴏᴜ ᴄᴀɴ ꜱᴇʟᴇᴄᴛ ғʀᴏᴍ ᴍᴀɴʏ ᴅᴏᴍᴀɪɴꜱ ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ɴɪᴄᴋ. Sᴍᴀʀᴛ, ʜᴜʜ?
 
-Send /new to set-up your MailBox! """
+Sᴇɴᴅ /new ᴛᴏ ꜱᴇᴛ-ᴜᴘ ʏᴏᴜʀ MᴀɪʟBᴏx!</b> """
 start_button = InlineKeyboardMarkup(
             [[
                     InlineKeyboardButton("Support Group", url="https://t.me/Master_brooi"),
