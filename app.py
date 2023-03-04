@@ -46,16 +46,16 @@ Oɴ ᴛʜɪꜱ ʙᴏᴛ ʏᴏᴜ ᴄᴀɴ ᴄʀᴇᴀᴛᴇ ᴀ ᴛᴇᴍᴘᴏ�
 Sᴇɴᴅ /new ᴛᴏ ꜱᴇᴛ-ᴜᴘ ʏᴏᴜʀ MᴀɪʟBᴏx!</b> """
 start_button = InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton("Support Group", url="https://t.me/Master_brooi"),
-                    InlineKeyboardButton("News Channel", url="https://t.me/Master_brooi"),
+                    InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url="https://t.me/MLZ_BOTZ"),
+                    InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/MLZ_BOTZ"),
             ]])
 fsub_text = """
 **❗️ ATTENTION**
 
-You see this message because you are not subscribed to the channel:
-@botsupportmst
+<b>You see this message because you are not subscribed to the channel:
+@MLZ_BOTZ
 
-It is important that you are up to date with the latest updates and aware of the brand new functionality."""
+It is important that you are up to date with the latest updates and aware of the brand new functionality.</b>"""
 
 
 async def get_user(message):
@@ -147,7 +147,8 @@ async def mail_box(_, query : CallbackQuery):
 **📬Done,Your Email Address Created!**
 📧 **Email** : `{smail}`
 📨 **Mail BOX** : ✅
-**Powered by** : @Master_brooi""",
+**Powered by** : @MLZ_BOTZ""",
+
 reply_markup = mbutton
 )   
         except bad_request_400.MessageNotModified as e:
