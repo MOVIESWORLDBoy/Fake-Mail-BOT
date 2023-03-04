@@ -87,7 +87,7 @@ API3='https://www.1secmail.com/api/v1/?action=readMessage&login='
 #********************************************************************************
 
 create = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("SZ team bots 🇱🇰", url="https://t.me/szteambots")]])
+            [[InlineKeyboardButton("TM MʟZ Bᴏᴛᴢ", url="https://t.me/MLZ_BOTZ")]])
 
 
 
