@@ -107,11 +107,11 @@ async def fakemailgen(_, message: Message):
 **📬Done,Your Email Address Created!**
 📧 **Email** : `{email}@{domain}`
 📨 **Mail BOX** : `empty`
-**Powered by** : @Master_brooi """,
+**Powered by** : @MLZ_BOTZ """,
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔰Update Mail Box🔰", callback_data = f"mailbox |{email}|{domain}")]]))
-    pi = await mes.pin(disable_notification=True, both_sides=True)
+    #pi = await mes.pin(disable_notification=True, both_sides=True)
     await m.delete()
-    await pi.delete()
+    #await pi.delete()
 
 async def gen_keyboard(mails, email, domain):
     num = 0
