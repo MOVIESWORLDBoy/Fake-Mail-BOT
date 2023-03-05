@@ -1,7 +1,7 @@
 pyrogram==1.4.16
 TgCrypto
 pymongo[srv]
-motor==3.0.0
+motor==3.1.1 
 asyncio
 requests
 wget
