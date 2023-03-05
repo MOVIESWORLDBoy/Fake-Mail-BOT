@@ -47,7 +47,7 @@ Sᴇɴᴅ /new ᴛᴏ ꜱᴇᴛ-ᴜᴘ ʏᴏᴜʀ MᴀɪʟBᴏx!</b> """
 start_button = InlineKeyboardMarkup(
             [[
                     InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url="https://t.me/MLZ_BOTZ"),
-                    InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/MLZ_BOTZ"),
+                    InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/MLZ_BOTZ_SUPPORT"),
             ]])
 fsub_text = """
 **❗️ ATTENTION**
