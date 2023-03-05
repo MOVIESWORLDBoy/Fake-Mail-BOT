@@ -37,7 +37,7 @@ app = Client(
 
 CHANNEL_ID = int(os.environ['CHANNEL_ID'])
 CHANNEL = os.environ['CHANNEL']
-OWNER = [int(owner) if id_pattern.search(owner) else owner for owner in environ.get('OWNER', '').split()]
+OWNER = (environ.get('OWNER', '')).split()
 
 
 start_text = """
