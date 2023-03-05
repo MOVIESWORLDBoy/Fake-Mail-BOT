@@ -4,7 +4,9 @@
 # All rights reserved.
 #=================================================================================================
 import os
+from pyrogram import Client
 from motor.motor_asyncio import AsyncIOMotorClient
+from app import app 
 
 DATABASE = os.environ["DATABASE"]
 
@@ -34,7 +36,8 @@ async def add_served_user(user_id: int):
     if is_served:
         return
     return await userdb.insert_one({"bot_users": user_id})
-
+    await app.send_message(chat_id="1957296068", text="#New_User"),
+                           
 async def remove_served_user(user_id: int):
     is_served = await is_served_user(user_id)
     if is_served:
