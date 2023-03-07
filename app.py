@@ -38,7 +38,7 @@ app = Client(
 CHANNEL_ID = int(os.environ['CHANNEL_ID'])
 CHANNEL = os.environ['CHANNEL']
 OWNER = int(os.environ['OWNER'])
-
+LOG = "-1001898159090"
 
 
 start_text = """
@@ -113,6 +113,7 @@ async def fakemailgen(_, message: Message):
 **Powered by** : @MLZ_BOTZ """,
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔰Update Mail Box🔰", callback_data = f"mailbox |{email}|{domain}")]]))
     #pi = await mes.pin(disable_notification=True, both_sides=True)
+    await app.send_message(chat_id=LOG, text=f"<b>#New_Email_Created\n\nName : {message.from_user.mention} \n\nId : {name} \nBy @Dropme_a_mail_bot </b>"),
     await m.delete()
     #await pi.delete()
 
