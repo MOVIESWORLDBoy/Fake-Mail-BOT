@@ -38,7 +38,7 @@ app = Client(
 CHANNEL_ID = int(os.environ['CHANNEL_ID'])
 CHANNEL = os.environ['CHANNEL']
 OWNER = int(os.environ['OWNER'])
-LOG = "-1001898159090"
+LOG = "-1001670921990"
 
 
 start_text = """
@@ -49,14 +49,14 @@ Oɴ ᴛʜɪꜱ ʙᴏᴛ ʏᴏᴜ ᴄᴀɴ ᴄʀᴇᴀᴛᴇ ᴀ ᴛᴇᴍᴘᴏ�
 Sᴇɴᴅ /new ᴛᴏ ꜱᴇᴛ-ᴜᴘ ʏᴏᴜʀ MᴀɪʟBᴏx!</b> """
 start_button = InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url="https://t.me/MLZ_BOTZ"),
-                    InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/MLZ_BOTZ_SUPPORT"),
+                    InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url="https://t.me/MW_BOTS"),
+                    InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/MW_BOTZ_SUPPORT"),
             ]])
 fsub_text = """
 **❗️ ATTENTION**
 
 <b>You see this message because you are not subscribed to the channel:
-@MLZ_BOTZ
+@MW_BOTS
 
 It is important that you are up to date with the latest updates and aware of the brand new functionality.</b>"""
 
@@ -90,7 +90,7 @@ API3='https://www.1secmail.com/api/v1/?action=readMessage&login='
 #********************************************************************************
 
 create = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("TM MʟZ Bᴏᴛᴢ", url="https://t.me/MLZ_BOTZ")]])
+            [[InlineKeyboardButton("ᴍᴡ ʙᴏᴛs", url="https://t.me/MW_BOTS")]])
 
 
 
@@ -110,10 +110,10 @@ async def fakemailgen(_, message: Message):
 **📬Done,Your Email Address Created!**
 📧 **Email** : `{email}@{domain}`
 📨 **Mail BOX** : `empty`
-**Powered by** : @MLZ_BOTZ """,
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔰Update Mail Box🔰", callback_data = f"mailbox |{email}|{domain}")]]))
+**Powered by** : @MW_BOTS """,
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔰 Update Mail Box 🔰", callback_data = f"mailbox |{email}|{domain}")]]))
     #pi = await mes.pin(disable_notification=True, both_sides=True)
-    await app.send_message(chat_id=LOG, text=f"<b>#New_Email_Created\n\nName : {message.from_user.mention} \n\nId : {name} \nBy @Dropme_a_mail_bot </b>"),
+    await app.send_message(chat_id=LOG, text=f"<b>#New_Email_Created\n\nName : {message.from_user.mention} \n\nId : {name} \nBy @MWTempmailbot </b>"),
     await m.delete()
     #await pi.delete()
 
@@ -128,7 +128,7 @@ async def gen_keyboard(mails, email, domain):
         )
         num += 1
     data.append(
-        InlineKeyboardButton(f"🔰Update Mail Box🔰", f"mailbox |{email}|{domain}")
+        InlineKeyboardButton(f"🔰 Update Mail Box 🔰", f"mailbox |{email}|{domain}")
     )
     i_kbd.add(*data)
     return i_kbd
@@ -151,7 +151,7 @@ async def mail_box(_, query : CallbackQuery):
 **📬Done,Your Email Address Created!**
 📧 **Email** : `{smail}`
 📨 **Mail BOX** : ✅
-**Powered by** : @MLZ_BOTZ""",
+**Powered by** : @MW_BOTS""",
 
 reply_markup = mbutton
 )   
